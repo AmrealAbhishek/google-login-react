@@ -26,13 +26,9 @@ function Login() {
         setShowloginButton(true);
         setShowlogoutButton(false);
     };
-    const auth = gapi.auth2.getAuthInstance();
+    
 
-    if (!auth.isSignedIn.get()) {
-        auth.signIn().then(() => // Do the thing);
-    } else {
-        // Do the thing
-    }
+    
 
     return (
         <div>

@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
-import { gapi } from 'gapi-script'  
+import { gapi } from 'gapi-script' 
+const clientId = "297291275421-ev1v7ipulqspa5be18c8iopnekoalg82.apps.googleusercontent.com"; 
 
 
 
 function Login() {
-  const clientId = "297291275421-ev1v7ipulqspa5be18c8iopnekoalg82.apps.googleusercontent.com";
+  
 
     const [showloginButton, setShowloginButton] = useState(true);
     const [showlogoutButton, setShowlogoutButton] = useState(false);
